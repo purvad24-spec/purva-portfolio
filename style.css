@@ -393,3 +393,236 @@ footer {
 .contact-item a:hover {
     color: #ffcc00;
 }
+```css
+/* =========================
+   MODULE 3 - JAVASCRIPT FEATURES
+   ========================= */
+
+/* Mobile Menu Button */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Dark / Light Mode Button */
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+#contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact-form button {
+    cursor: pointer;
+}
+
+#form-message {
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+body.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+body.dark-mode header {
+    background: #111;
+}
+
+body.dark-mode .section,
+body.dark-mode .about-box,
+body.dark-mode .skill {
+    color: white;
+}
+
+body.dark-mode .skill {
+    background: #1e1e1e;
+}
+
+body.dark-mode #contact-form input,
+body.dark-mode #contact-form textarea {
+    background: #222;
+    color: white;
+    border-color: #555;
+}
+
+
+/* SCROLL ANIMATION */
+
+.section,
+.hero {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease;
+}
+
+.section.scroll-hidden,
+.hero.scroll-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.section.scroll-show,
+.hero.scroll-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   MOBILE RESPONSIVE MENU
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        background: white;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    body.dark-mode nav ul {
+        background: #111;
+    }
+}
+```
+/* DARK MODE */
+
+body.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+body.dark-mode header {
+    background-color: #000000 !important;
+}
+
+body.dark-mode .section {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+body.dark-mode .hero {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+body.dark-mode .about-box,
+body.dark-mode .skill,
+body.dark-mode .contact-item {
+    background-color: #1e1e1e !important;
+    color: white !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+    color: white;
+}
+
+body.dark-mode a {
+    color: #ffffff;
+}
+
+body.dark-mode #contact-form input,
+body.dark-mode #contact-form textarea {
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+}
+/* DARK MODE */
+
+body.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+body.dark-mode header {
+    background-color: #000 !important;
+}
+
+body.dark-mode .hero,
+body.dark-mode .section {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+body.dark-mode .about-box,
+body.dark-mode .skill,
+body.dark-mode .contact-item {
+    background-color: #1e1e1e !important;
+    color: white !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+    color: white;
+}
+
+body.dark-mode a {
+    color: white;
+}
+
+body.dark-mode #contact-form input,
+body.dark-mode #contact-form textarea {
+    background-color: #222 !important;
+    color: white !important;
+}

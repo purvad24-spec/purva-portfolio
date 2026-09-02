@@ -1,16 +1,25 @@
+<!
+```html
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Purva Deshmukh | Portfolio</title>
 
-    <!-- CSS File -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,22 +28,38 @@
     <!-- Navigation Bar -->
     <header>
         <nav>
+
             <h2 class="logo">Purva</h2>
 
-            <ul>
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <!-- Dark / Light Mode Button -->
+            <button class="theme-btn" id="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
         </nav>
     </header>
+
 
     <!-- Hero / Home Section -->
     <section id="home" class="hero">
 
         <div class="hero-text">
-            <h1>Hello, I'm <span>Purva Deshmukh</span></h1>
+
+            <h1>
+                Hello, I'm <span>Purva Deshmukh</span>
+            </h1>
 
             <h2>BCA Student</h2>
 
@@ -44,6 +69,7 @@
             </p>
 
             <a href="#contact" class="btn">Contact Me</a>
+
         </div>
 
         <div class="hero-image">
@@ -59,6 +85,7 @@
         <h2>About Me</h2>
 
         <div class="about-box">
+
             <p>
                 Hello! My name is Purva Deshmukh.
                 I am a BCA student and I am learning programming
@@ -70,6 +97,7 @@
                 My goal is to improve my technical skills and build
                 useful and creative projects.
             </p>
+
         </div>
 
     </section>
@@ -83,22 +111,25 @@
         <div class="skills-container">
 
             <div class="skill">
-    <i class="fa-brands fa-html5 skill-icon"></i>
-    <h3>HTML</h3>
-    <p>Creating the structure of websites.</p>
-</div>
+                <i class="fa-brands fa-html5 skill-icon"></i>
+                <h3>HTML</h3>
+                <p>Creating the structure of websites.</p>
+            </div>
 
             <div class="skill">
+                <i class="fa-brands fa-css3-alt skill-icon"></i>
                 <h3>CSS</h3>
                 <p>Designing and styling websites.</p>
             </div>
 
             <div class="skill">
+                <i class="fa-brands fa-java skill-icon"></i>
                 <h3>Java</h3>
                 <p>Learning object-oriented programming.</p>
             </div>
 
             <div class="skill">
+                <i class="fa-brands fa-python skill-icon"></i>
                 <h3>Python</h3>
                 <p>Learning programming and problem solving.</p>
             </div>
@@ -108,47 +139,85 @@
     </section>
 
 
+    <!-- Contact Section -->
     <section id="contact" class="section contact">
 
-    <h2>Contact Me</h2>
+        <h2>Contact Me</h2>
 
-    <div class="contact-container">
+        <div id="contact-form">
 
-        <div class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-                <h3>Email</h3>
-                <p>your-email@gmail.com</p>
+    <input type="text" id="name" placeholder="Your Name">
+
+    <input type="email" id="email" placeholder="Your Email">
+
+    <textarea id="message" placeholder="Your Message"></textarea>
+
+    <button type="button" class="btn" id="send-btn">
+        Send Message
+    </button>
+
+    <p id="form-message"></p>
+
+</div>
+
+
+        <!-- Contact Information -->
+        <div class="contact-container">
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                    <h3>Email</h3>
+                    <p>your-email@gmail.com</p>
+                </div>
+
             </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+                    <h3>Phone</h3>
+                    <p>+91 XXXXX XXXXX</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                <div>
+                    <h3>LinkedIn</h3>
+                    <a href="#" target="_blank">
+                        My LinkedIn Profile
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-brands fa-github"></i>
+
+                <div>
+                    <h3>GitHub</h3>
+                    <a href="#" target="_blank">
+                        My GitHub Profile
+                    </a>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="contact-item">
-            <i class="fa-solid fa-phone"></i>
-            <div>
-                <h3>Phone</h3>
-                <p>+91 XXXXX XXXXX</p>
-            </div>
-        </div>
-
-        <div class="contact-item">
-            <i class="fa-brands fa-linkedin"></i>
-            <div>
-                <h3>LinkedIn</h3>
-                <a href="#" target="_blank">My LinkedIn Profile</a>
-            </div>
-        </div>
-
-        <div class="contact-item">
-            <i class="fa-brands fa-github"></i>
-            <div>
-                <h3>GitHub</h3>
-                <a href="#" target="_blank">My GitHub Profile</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 
     <!-- Footer -->
@@ -156,5 +225,11 @@
         <p>© 2026 Purva Deshmukh | My Portfolio</p>
     </footer>
 
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
+```
