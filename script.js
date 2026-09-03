@@ -22,7 +22,6 @@ if (menuBtn && navLinks) {
         }
 
     });
-
 }
 
 
@@ -41,19 +40,14 @@ if (themeBtn) {
         const icon = themeBtn.querySelector("i");
 
         if (document.body.classList.contains("dark-mode")) {
-
             icon.classList.remove("fa-moon");
             icon.classList.add("fa-sun");
-
         } else {
-
             icon.classList.remove("fa-sun");
             icon.classList.add("fa-moon");
-
         }
 
     });
-
 }
 
 
@@ -96,9 +90,7 @@ navItems.forEach(function (link) {
 const sections = document.querySelectorAll(".section");
 
 sections.forEach(function (section) {
-
     section.classList.add("scroll-hidden");
-
 });
 
 
@@ -137,6 +129,7 @@ if (sendBtn) {
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
+
         const formMessage = document.getElementById("form-message");
 
 

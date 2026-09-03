@@ -626,3 +626,223 @@ body.dark-mode #contact-form textarea {
     background-color: #222 !important;
     color: white !important;
 }
+/* =========================
+   MODULE 4 - PROJECTS
+   ========================= */
+
+.projects-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #ffcc00;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    color: #1e3a5f;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.project-card p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.project-card .btn {
+    margin-right: 8px;
+    margin-bottom: 5px;
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   MODULE 4 - EDUCATION
+   ========================= */
+
+.education-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.education-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #ffcc00;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.education-icon {
+    font-size: 35px;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.education-card h3 {
+    color: #1e3a5f;
+    margin-bottom: 8px;
+}
+
+.education-card h4 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MODULE 4 - RESUME
+   ========================= */
+
+.resume-section {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #eaf2fb;
+}
+
+.resume-section h2 {
+    font-size: 32px;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.resume-section p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.resume-btn {
+    display: inline-block;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #ffcc00;
+    color: #222;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MODULE 4 - DARK MODE
+   ========================= */
+
+body.dark-mode .project-card,
+body.dark-mode .education-card {
+    background-color: #1e1e1e !important;
+    color: white;
+}
+
+body.dark-mode .project-card h3,
+body.dark-mode .education-card h3,
+body.dark-mode .education-icon {
+    color: white;
+}
+
+body.dark-mode .project-card p,
+body.dark-mode .education-card h4,
+body.dark-mode .education-card p {
+    color: #ddd;
+}
+
+body.dark-mode .resume-section {
+    background-color: #121212 !important;
+}
+
+body.dark-mode .resume-section h2,
+body.dark-mode .resume-section p {
+    color: white;
+}
+
+
+/* =========================
+   MODULE 4 - RESPONSIVE
+   ========================= */
+
+@media (max-width: 992px) {
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        text-align: center;
+    }
+
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        text-align: center;
+    }
+
+    .resume-section {
+        padding: 50px 5%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 19px;
+    }
+
+    .resume-section h2 {
+        font-size: 28px;
+    }
+}
