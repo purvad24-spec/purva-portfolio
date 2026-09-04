@@ -22,7 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
+<script src="script.js"></script>
 <body>
 
     <!-- Navigation Bar -->
@@ -46,9 +46,10 @@
 </ul>
 
             <!-- Dark / Light Mode Button -->
-            <button class="theme-btn" id="theme-btn">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+            <button type="button" class="theme-btn" id="theme-btn"
+onclick="document.body.classList.toggle('dark-mode')">
+    <i class="fa-solid fa-moon"></i>
+</button>
 
         </nav>
     </header>
@@ -250,7 +251,7 @@
 
 </section>
 
-```html
+html
 <!-- Contact Section -->
 <section id="contact" class="section contact">
 
@@ -325,4 +326,7 @@
     </div>
 
 </section>
+<script src="script.js"></script>
+</body>
+</html>
 
