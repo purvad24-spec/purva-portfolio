@@ -410,9 +410,15 @@ footer {
 .theme-btn {
     background: none;
     border: none;
-    font-size: 20px;
+    color: white;
+    font-size: 22px;
     cursor: pointer;
     margin-left: 15px;
+    padding: 8px;
+}
+
+.theme-btn:hover {
+    color: #ffcc00;
 }
 
 /* Contact Form */
